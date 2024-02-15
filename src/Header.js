@@ -2,9 +2,9 @@ import React from 'react';
 
 function Header() {
     return (
-      <h4>
+      <div className='Header'>
         BIG BANG THEORY
-      </h4>
+      </div>
     );
   }
   

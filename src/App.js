@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
-import EpisodeList from './EpisodeList';
 import Header from './Header';
+import Directory from './Directory';
 
 function App() {
   
@@ -16,7 +16,7 @@ function App() {
   return (
     <div>
       <Header />
-      <EpisodeList />
+      <Directory />
     </div>
   );
 }

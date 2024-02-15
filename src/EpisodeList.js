@@ -4,7 +4,6 @@ function EpisodeList() {
     return (
       <div className='Episode-List' id='Episode-List'>
         Episodes:
-
       </div>
     );
   }
