@@ -6,17 +6,18 @@ import Directory from './Directory';
 function App() {
   
   const [episode, setEpisode] = useState(0);
+  const [data, setData] = useState();
 
-  // useEffect(() => {
-  //   fetch("https://us-central1-big-bang-theory-25fd5.cloudfunctions.net/bbt391581/bbt/episodes")
-  //   .then(response => response.json())
-  //   .then(data => data._embedded.episodes);
-  // }) 
+  useEffect(() => {
+    fetch("https://us-central1-big-bang-theory-25fd5.cloudfunctions.net/bbt391581/bbt/episodes")
+    .then(response => response.json())
+    .then(data => setData(data?.data?._embedded?.episodes));
+  })
 
   return (
     <div>
       <Header />
-      <Directory />
+      <Directory episode={data}/>
     </div>
   );
 }
