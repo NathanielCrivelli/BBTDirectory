@@ -5,8 +5,7 @@ import Directory from './Directory';
 
 function App() {
   
-  const [episode, setEpisode] = useState(0);
-  const [data, setData] = useState();
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     fetch("https://us-central1-big-bang-theory-25fd5.cloudfunctions.net/bbt391581/bbt/episodes")
@@ -17,7 +16,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Directory episode={data}/>
+      <Directory info={data}/>
     </div>
   );
 }

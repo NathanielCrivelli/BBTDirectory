@@ -3,14 +3,15 @@ import EpisodeInformation from './EpisodeInformation';
 import EpisodeList from './EpisodeList';
 
 function Directory(props) {
+
     useEffect(() => {
-      console.log(props.episode[0])
+      console.log(props.info[0])
     },[])
 
     return (
       <div className='Directory-Container'>
         <EpisodeList />
-        <EpisodeInformation episode={props?.episode[0]}/>
+        <EpisodeInformation ep={props.info[0]}/>
       </div>
     );
   }
