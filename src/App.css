@@ -18,6 +18,8 @@
   height: 702px;
   margin: 4px;
   padding: 4px;
+  overflow-y: scroll;
+  flex: 1;
 }
 
 .Episode-Information {
@@ -37,4 +39,8 @@
   border: 1px solid black;
   font-size: 24px;
   margin-top: 4px;
+}
+
+.episode-button {
+  width: 100%;
 }

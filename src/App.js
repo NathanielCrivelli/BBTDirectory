@@ -14,10 +14,18 @@ function App() {
     .then(data => setData(data?.data?._embedded?.episodes));
   })
 
+  useEffect(() => {
+    console.log(episode);
+  },[episode])
+
+  const episodeInput = function(ep) {
+    setEpisode(ep)
+  }
+
   return (
     <div>
       <Header />
-      <Directory info={data} num={episode}/>
+      <Directory info={data} num={episode} onClick={episodeInput} />
     </div>
   );
 }
