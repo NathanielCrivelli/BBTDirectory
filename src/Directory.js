@@ -6,12 +6,12 @@ function Directory(props) {
 
     useEffect(() => {
       console.log(props.info[0])
-    },[])
+    },[props.info])
 
     return (
       <div className='Directory-Container'>
-        <EpisodeList />
-        <EpisodeInformation ep={props.info[0]}/>
+        <EpisodeList list={props.info} />
+        <EpisodeInformation ep={props.info[props.num]}/>
       </div>
     );
   }
