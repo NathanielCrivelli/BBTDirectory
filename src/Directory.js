@@ -1,12 +1,12 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import EpisodeInformation from './EpisodeInformation';
 import EpisodeList from './EpisodeList';
 
 function Directory(props) {
 
-    useEffect(() => {
-      console.log(props.info[props.num])
-    },[props.num])
+    // useEffect(() => {
+    //   console.log(props.info[props.num])
+    // },[props.num])
 
     return (
       <div className='Directory-Container'>

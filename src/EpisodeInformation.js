@@ -1,7 +1,7 @@
 import React from 'react';
 
 function EpisodeInformation(props) {
-
+    
     return (
       <div className='Episode-Information'>
         <h4 className='Episode-Name-Box'>
@@ -13,7 +13,7 @@ function EpisodeInformation(props) {
         <div className='Episode-Description-Box'>
             Description: {}
         </div>
-        <img src={!props.ep ? "Loading..." : props.ep.url} />
+        <img src={!props.ep ? "Loading..." : props.ep.url} alt=''/>
       </div>
     );
   }
